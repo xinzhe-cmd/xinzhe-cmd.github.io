@@ -1,0 +1,1785 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.8.6.</p>
+      <p>Project: 
+			automachine[automachine]</p>
+      <h2>Metrics</h2>
+      <p>467 lines of code analyzed,
+	in 18 classes, 
+	in 1 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">2</td>
+            <td align="right">4.28</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">60</td>
+            <td align="right">128.48</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Low Priority Warnings</td>
+            <td align="right">38</td>
+            <td align="right">81.37</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>100</b>
+            </td>
+            <td align="right">
+               <b>214.13</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </td>
+            <td align="right">11</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">45</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">8</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">36</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>100</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception thrown in class CustomerPanel at new CustomerPanel() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java CustomerPanel.java CustomerPanel.java,
+					
+						line 46 46 46<br/>In class CustomerPanel<br/>In method new CustomerPanel()<br/>At CustomerPanel.java:[line 46]<br/>At CustomerPanel.java:[line 46]<br/>At CustomerPanel.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception thrown in class ManageLoginPanel at new ManageLoginPanel() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java ManageLoginPanel.java ManageLoginPanel.java,
+					
+						line 24 24 24<br/>In class ManageLoginPanel<br/>In method new ManageLoginPanel()<br/>At ManageLoginPanel.java:[line 24]<br/>At ManageLoginPanel.java:[line 24]<br/>At ManageLoginPanel.java:[line 24]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception thrown in class ModifyCoinPanel at new ModifyCoinPanel() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java ModifyCoinPanel.java ModifyCoinPanel.java,
+					
+						line 26 26 26<br/>In class ModifyCoinPanel<br/>In method new ModifyCoinPanel()<br/>At ModifyCoinPanel.java:[line 26]<br/>At ModifyCoinPanel.java:[line 26]<br/>At ModifyCoinPanel.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception thrown in class ModifyProPanel at new ModifyProPanel() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java ModifyProPanel.java ModifyProPanel.java,
+					
+						line 43 43 43<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 43]<br/>At ModifyProPanel.java:[line 43]<br/>At ModifyProPanel.java:[line 43]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception thrown in class ProInfoPanel at new ProInfoPanel() will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java ProInfoPanel.java ProInfoPanel.java,
+					
+						line 15 15 15<br/>In class ProInfoPanel<br/>In method new ProInfoPanel()<br/>At ProInfoPanel.java:[line 15]<br/>At ProInfoPanel.java:[line 15]<br/>At ProInfoPanel.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The method name Customer.JudgeCoinPrice(float) doesn't start with a lower case letter<br/>
+                  <br/>
+                  <br/>In file Customer.java,
+					
+						lines 31
+						    to 35<br/>In class Customer<br/>In method Customer.JudgeCoinPrice(float)<br/>At Customer.java:[lines 31-35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The method name ModifyProPanel.JudgeNum(int) doesn't start with a lower case letter<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 107
+						    to 109<br/>In class ModifyProPanel<br/>In method ModifyProPanel.JudgeNum(int)<br/>At ModifyProPanel.java:[lines 107-109]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>The method name PayCoinPanel.Pay(Production) doesn't start with a lower case letter<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 20
+						    to 41<br/>In class PayCoinPanel<br/>In method PayCoinPanel.Pay(Production)<br/>At PayCoinPanel.java:[lines 20-41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class CustomerPanel defines non-transient non-serializable instance field pro1<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java,
+					
+						lines 
+						    to <br/>In class CustomerPanel<br/>Field CustomerPanel.pro1<br/>Actual type Production<br/>In CustomerPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class CustomerPanel defines non-transient non-serializable instance field pro2<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java,
+					
+						lines 
+						    to <br/>In class CustomerPanel<br/>Field CustomerPanel.pro2<br/>Actual type Production<br/>In CustomerPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class PayCoinPanel defines non-transient non-serializable instance field customer<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 
+						    to <br/>In class PayCoinPanel<br/>Field PayCoinPanel.customer<br/>Actual type Customer<br/>In PayCoinPanel.java</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class InitialPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 38<br/>In class InitialPanel<br/>Field InitialPanel.gomanage<br/>At InitialPanel.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class InitialPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 31<br/>In class InitialPanel<br/>Field InitialPanel.gostore<br/>At InitialPanel.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class InitialPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 18<br/>In class InitialPanel<br/>Field InitialPanel.panel<br/>At InitialPanel.java:[line 18]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ManageLoginPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						line 12<br/>In class ManageLoginPanel<br/>Field ManageLoginPanel.keybutton<br/>At ManageLoginPanel.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ManageLoginPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						line 11<br/>In class ManageLoginPanel<br/>Field ManageLoginPanel.panel<br/>At ManageLoginPanel.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ManagePanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 16<br/>In class ManagePanel<br/>Field ManagePanel.modifycoinbutton<br/>At ManagePanel.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ManagePanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 15<br/>In class ManagePanel<br/>Field ManagePanel.modifyprobutton<br/>At ManagePanel.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ManagePanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 14<br/>In class ManagePanel<br/>Field ManagePanel.viewbutton<br/>At ManagePanel.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ProInfoPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						line 9<br/>In class ProInfoPanel<br/>Field ProInfoPanel.beerlabel<br/>At ProInfoPanel.java:[line 9]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ProInfoPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						line 11<br/>In class ProInfoPanel<br/>Field ProInfoPanel.coinlabel<br/>At ProInfoPanel.java:[line 11]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ProInfoPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						line 10<br/>In class ProInfoPanel<br/>Field ProInfoPanel.juicelabel<br/>At ProInfoPanel.java:[line 10]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class ProInfoPanel defines fields that are used only as locals<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						line 8<br/>In class ProInfoPanel<br/>Field ProInfoPanel.panel<br/>At ProInfoPanel.java:[line 8]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETSIZE">Window sets size manually, and doesn't use pack</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Window CustomerPanel sets size manually, and doesn't use pack<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java,
+					
+						line 43<br/>In class CustomerPanel<br/>In method new CustomerPanel()<br/>At CustomerPanel.java:[line 43]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new InitialPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 31<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>At InitialPanel.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new InitialPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 38<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>At InitialPanel.java:[line 38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETSIZE">Window sets size manually, and doesn't use pack</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Window InitialPanel sets size manually, and doesn't use pack<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 27<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>At InitialPanel.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ManageLoginPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						line 12<br/>In class ManageLoginPanel<br/>In method new ManageLoginPanel()<br/>At ManageLoginPanel.java:[line 12]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETSIZE">Window sets size manually, and doesn't use pack</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Window ManageLoginPanel sets size manually, and doesn't use pack<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						line 21<br/>In class ManageLoginPanel<br/>In method new ManageLoginPanel()<br/>At ManageLoginPanel.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ManagePanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 14<br/>In class ManagePanel<br/>In method new ManagePanel()<br/>At ManagePanel.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ManagePanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 15<br/>In class ManagePanel<br/>In method new ManagePanel()<br/>At ManagePanel.java:[line 15]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ManagePanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 16<br/>In class ManagePanel<br/>In method new ManagePanel()<br/>At ManagePanel.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyCoinPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						line 14<br/>In class ModifyCoinPanel<br/>In method new ModifyCoinPanel()<br/>At ModifyCoinPanel.java:[line 14]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyCoinPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						line 16<br/>In class ModifyCoinPanel<br/>In method new ModifyCoinPanel()<br/>At ModifyCoinPanel.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ModifyCoinPanel.coinlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						lines 
+						    to <br/>In class ModifyCoinPanel<br/>Field ModifyCoinPanel.coinlabel<br/>In ModifyCoinPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ModifyCoinPanel.rightlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						lines 
+						    to <br/>In class ModifyCoinPanel<br/>Field ModifyCoinPanel.rightlabel<br/>In ModifyCoinPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ModifyCoinPanel$ButtonListener.actionPerformed(ActionEvent) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						line 40<br/>In class ModifyCoinPanel$ButtonListener<br/>In method ModifyCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ModifyCoinPanel.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ModifyCoinPanel$ButtonListener.actionPerformed(ActionEvent) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						line 56<br/>In class ModifyCoinPanel$ButtonListener<br/>In method ModifyCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ModifyCoinPanel.java:[line 56]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 16<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 16]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 17<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 17]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 21<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 21]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 22<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 26<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method new ModifyProPanel() passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 27<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>At ModifyProPanel.java:[line 27]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ModifyProPanel.beernumlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 
+						    to <br/>In class ModifyProPanel<br/>Field ModifyProPanel.beernumlabel<br/>In ModifyProPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ModifyProPanel.juicenumlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 
+						    to <br/>In class ModifyProPanel<br/>Field ModifyProPanel.juicenumlabel<br/>In ModifyProPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ModifyProPanel.successlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 
+						    to <br/>In class ModifyProPanel<br/>Field ModifyProPanel.successlabel<br/>In ModifyProPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ModifyProPanel$ButtonListener.actionPerformed(ActionEvent) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						line 56<br/>In class ModifyProPanel$ButtonListener<br/>In method ModifyProPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ModifyProPanel.java:[line 56]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method PayCoinPanel.Pay(Production) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						line 33<br/>In class PayCoinPanel<br/>In method PayCoinPanel.Pay(Production)<br/>At PayCoinPanel.java:[line 33]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method PayCoinPanel.changelabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 
+						    to <br/>In class PayCoinPanel<br/>Field PayCoinPanel.changelabel<br/>In PayCoinPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method PayCoinPanel.info doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 
+						    to <br/>In class PayCoinPanel<br/>Field PayCoinPanel.info<br/>In PayCoinPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						line 72<br/>In class PayCoinPanel$ButtonListener<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 72]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent) passes constant string to title/label of component<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						line 79<br/>In class PayCoinPanel$ButtonListener<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 79]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ProInfoPanel.beerlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						lines 
+						    to <br/>In class ProInfoPanel<br/>Field ProInfoPanel.beerlabel<br/>In ProInfoPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ProInfoPanel.coinlabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						lines 
+						    to <br/>In class ProInfoPanel<br/>Field ProInfoPanel.coinlabel<br/>In ProInfoPanel.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>JLabel in method ProInfoPanel.juicelabel doesn't specify what it's labeling<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						lines 
+						    to <br/>In class ProInfoPanel<br/>Field ProInfoPanel.juicelabel<br/>In ProInfoPanel.java</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new CustomerPanel().<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java CustomerPanel.java,
+					
+						line 47 47<br/>In class CustomerPanel<br/>In method new CustomerPanel()<br/>Value getContentPane<br/>At CustomerPanel.java:[line 47]<br/>At CustomerPanel.java:[line 47]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new InitialPanel().<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java InitialPanel.java,
+					
+						line 19 19<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>Value getContentPane<br/>At InitialPanel.java:[line 19]<br/>At InitialPanel.java:[line 19]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getLayeredPane is called from constructor new InitialPanel().<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java InitialPanel.java,
+					
+						line 25 25<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>Value getLayeredPane<br/>At InitialPanel.java:[line 25]<br/>At InitialPanel.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method validate is called from constructor new InitialPanel().<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java InitialPanel.java,
+					
+						line 46 46<br/>In class InitialPanel<br/>In method new InitialPanel()<br/>Value validate<br/>At InitialPanel.java:[line 46]<br/>At InitialPanel.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new ManageLoginPanel().<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java ManageLoginPanel.java,
+					
+						line 25 25<br/>In class ManageLoginPanel<br/>In method new ManageLoginPanel()<br/>Value getContentPane<br/>At ManageLoginPanel.java:[line 25]<br/>At ManageLoginPanel.java:[line 25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new ModifyCoinPanel().<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java ModifyCoinPanel.java,
+					
+						line 29 29<br/>In class ModifyCoinPanel<br/>In method new ModifyCoinPanel()<br/>Value getContentPane<br/>At ModifyCoinPanel.java:[line 29]<br/>At ModifyCoinPanel.java:[line 29]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new ModifyProPanel().<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java ModifyProPanel.java,
+					
+						line 49 49<br/>In class ModifyProPanel<br/>In method new ModifyProPanel()<br/>Value getContentPane<br/>At ModifyProPanel.java:[line 49]<br/>At ModifyProPanel.java:[line 49]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Overridable method getContentPane is called from constructor new ProInfoPanel().<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java ProInfoPanel.java,
+					
+						line 22 22<br/>In class ProInfoPanel<br/>In method new ProInfoPanel()<br/>Value getContentPane<br/>At ProInfoPanel.java:[line 22]<br/>At ProInfoPanel.java:[line 22]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#LSC_LITERAL_STRING_COMPARISON">Method makes literal string comparisons passing the literal as an argument</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent) makes literal string comparisons passing the literal as an argument<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						line 56<br/>In class PayCoinPanel$ButtonListener<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 56]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#LSC_LITERAL_STRING_COMPARISON">Method makes literal string comparisons passing the literal as an argument</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent) makes literal string comparisons passing the literal as an argument<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						line 60<br/>In class PayCoinPanel$ButtonListener<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 60]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#FE_FLOATING_POINT_EQUALITY">Test for floating point equality</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Test for floating point equality in Customer.JudgeCoinPrice(float)<br/>
+                  <br/>
+                  <br/>In file Customer.java,
+					
+						line 31<br/>In class Customer<br/>In method Customer.JudgeCoinPrice(float)<br/>At Customer.java:[line 31]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method AutoStore.main(String[]) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file AutoStore.java,
+					
+						line 22<br/>In class AutoStore<br/>In method AutoStore.main(String[])<br/>At AutoStore.java:[line 22]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method InitialPanel$ButtonListener.actionPerformed(ActionEvent) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 55<br/>In class InitialPanel$ButtonListener<br/>In method InitialPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At InitialPanel.java:[line 55]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method InitialPanel$ButtonListener.actionPerformed(ActionEvent) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						line 59<br/>In class InitialPanel$ButtonListener<br/>In method InitialPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At InitialPanel.java:[line 59]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ManagePanel$ButtonListener.actionPerformed(ActionEvent) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 32<br/>In class ManagePanel$ButtonListener<br/>In method ManagePanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ManagePanel.java:[line 32]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ManagePanel$ButtonListener.actionPerformed(ActionEvent) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 36<br/>In class ManagePanel$ButtonListener<br/>In method ManagePanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ManagePanel.java:[line 36]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Method ManagePanel$ButtonListener.actionPerformed(ActionEvent) uses a Side Effect Constructor<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						line 40<br/>In class ManagePanel$ButtonListener<br/>In method ManagePanel$ButtonListener.actionPerformed(ActionEvent)<br/>At ManagePanel.java:[line 40]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class AutoStore id defined in the default package<br/>
+                  <br/>
+                  <br/>In file AutoStore.java,
+					
+						lines 15
+						    to 38<br/>In class AutoStore<br/>At AutoStore.java:[lines 15-38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Customer id defined in the default package<br/>
+                  <br/>
+                  <br/>In file Customer.java,
+					
+						lines 2
+						    to 35<br/>In class Customer<br/>At Customer.java:[lines 2-35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_TOSTRING">Class does not implement a toString method</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Customer does not implement a toString method<br/>
+                  <br/>
+                  <br/>In file Customer.java,
+					
+						lines 2
+						    to 35<br/>In class Customer<br/>At Customer.java:[lines 2-35]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER">Class orders instance fields before static fields</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Customer orders instance fields before static fields<br/>
+                  <br/>
+                  <br/>In file Customer.java,
+					
+						lines 
+						    to <br/>In class Customer<br/>Field Customer.leftCoin<br/>In Customer.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class CustomerPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java,
+					
+						lines 13
+						    to 49<br/>In class CustomerPanel<br/>At CustomerPanel.java:[lines 13-49]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class CustomerPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file CustomerPanel.java,
+					
+						lines 51
+						    to 74<br/>In class CustomerPanel$ButtonListener<br/>At CustomerPanel.java:[lines 51-74]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class InitialPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						lines 12
+						    to 48<br/>In class InitialPanel<br/>At InitialPanel.java:[lines 12-48]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class InitialPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file InitialPanel.java,
+					
+						lines 49
+						    to 63<br/>In class InitialPanel$ButtonListener<br/>At InitialPanel.java:[lines 49-63]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ManageLoginPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						lines 10
+						    to 26<br/>In class ManageLoginPanel<br/>At ManageLoginPanel.java:[lines 10-26]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ManageLoginPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ManageLoginPanel.java,
+					
+						lines 29
+						    to 38<br/>In class ManageLoginPanel$ButtonListener<br/>At ManageLoginPanel.java:[lines 29-38]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ManagePanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						lines 11
+						    to 25<br/>In class ManagePanel<br/>At ManagePanel.java:[lines 11-25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ManagePanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ManagePanel.java,
+					
+						lines 26
+						    to 44<br/>In class ManagePanel$ButtonListener<br/>At ManagePanel.java:[lines 26-44]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ModifyCoinPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						lines 13
+						    to 30<br/>In class ModifyCoinPanel<br/>At ModifyCoinPanel.java:[lines 13-30]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ModifyCoinPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ModifyCoinPanel.java,
+					
+						lines 31
+						    to 63<br/>In class ModifyCoinPanel$ButtonListener<br/>At ModifyCoinPanel.java:[lines 31-63]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ModifyProPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 14
+						    to 109<br/>In class ModifyProPanel<br/>At ModifyProPanel.java:[lines 14-109]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ModifyProPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ModifyProPanel.java,
+					
+						lines 51
+						    to 104<br/>In class ModifyProPanel$ButtonListener<br/>At ModifyProPanel.java:[lines 51-104]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class PayCoinPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 7
+						    to 41<br/>In class PayCoinPanel<br/>At PayCoinPanel.java:[lines 7-41]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class PayCoinPanel$ButtonListener id defined in the default package<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java,
+					
+						lines 42
+						    to 86<br/>In class PayCoinPanel$ButtonListener<br/>At PayCoinPanel.java:[lines 42-86]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class ProInfoPanel id defined in the default package<br/>
+                  <br/>
+                  <br/>In file ProInfoPanel.java,
+					
+						lines 6
+						    to 25<br/>In class ProInfoPanel<br/>At ProInfoPanel.java:[lines 6-25]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Production id defined in the default package<br/>
+                  <br/>
+                  <br/>In file Production.java,
+					
+						lines 2
+						    to 71<br/>In class Production<br/>At Production.java:[lines 2-71]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_NO_TOSTRING">Class does not implement a toString method</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Production does not implement a toString method<br/>
+                  <br/>
+                  <br/>In file Production.java,
+					
+						lines 2
+						    to 71<br/>In class Production<br/>At Production.java:[lines 2-71]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER">Class orders instance fields before static fields</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Class Production orders instance fields before static fields<br/>
+                  <br/>
+                  <br/>In file Production.java,
+					
+						lines 
+						    to <br/>In class Production<br/>Field Production.probeerNum<br/>In Production.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>Exception is caught when Exception is not thrown in AutoStore.main(String[])<br/>
+                  <br/>
+                  <br/>In file AutoStore.java AutoStore.java,
+					
+						line 34 34<br/>In class AutoStore<br/>In method AutoStore.main(String[])<br/>At AutoStore.java:[line 34]<br/>At AutoStore.java:[line 34]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">Field not initialized in constructor but dereferenced without null check</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>coinfield not initialized in constructor and dereferenced in PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java PayCoinPanel.java,
+					
+						line 48 48<br/>In class PayCoinPanel<br/>Field PayCoinPanel.coinfield<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 48]<br/>At PayCoinPanel.java:[line 48]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">Field not initialized in constructor but dereferenced without null check</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>coinpanel not initialized in constructor and dereferenced in PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java PayCoinPanel.java,
+					
+						line 71 71<br/>In class PayCoinPanel<br/>Field PayCoinPanel.coinpanel<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 71]<br/>At PayCoinPanel.java:[line 71]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">Field not initialized in constructor but dereferenced without null check</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>customer not initialized in constructor and dereferenced in PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java PayCoinPanel.java,
+					
+						line 48 48<br/>In class PayCoinPanel<br/>Field PayCoinPanel.customer<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 48]<br/>At PayCoinPanel.java:[line 48]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">Field not initialized in constructor but dereferenced without null check</a>
+            </td>
+            <td width="10%" valign="top">Low</td>
+            <td width="70%">
+               <p>proId not initialized in constructor and dereferenced in PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>
+                  <br/>
+                  <br/>In file PayCoinPanel.java PayCoinPanel.java,
+					
+						line 56 56<br/>In class PayCoinPanel<br/>Field PayCoinPanel.proId<br/>In method PayCoinPanel$ButtonListener.actionPerformed(ActionEvent)<br/>At PayCoinPanel.java:[line 56]<br/>At PayCoinPanel.java:[line 56]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="CT_CONSTRUCTOR_THROW">Be wary of letting constructors throw exceptions.</a>
+      </h2>
+      
+            <p>Classes that throw exceptions in their constructors are vulnerable to Finalizer attacks</p>
+
+            <p>A finalizer attack can be prevented, by declaring the class final, using an empty finalizer declared as final, or by a clever use of a private constructor.</p>
+
+            <p>See <a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ11-J.+Be+wary+of+letting+constructors+throw+exceptions"><code>SEI CERT Rule OBJ-11</code></a>
+            for more information.
+            </p>
+            
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="FCBL_FIELD_COULD_BE_LOCAL">Class defines fields that are used only as locals</a>
+      </h2>
+			
+			<p>This class defines fields that are used in a local only fashion,
+			specifically private fields or protected fields in final classes that are accessed
+			first in each method with a store vs. a load. This field could be replaced by one
+			or more local variables.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="FE_FLOATING_POINT_EQUALITY">Test for floating point equality</a>
+      </h2>
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IMC_IMMATURE_CLASS_NO_TOSTRING">Class does not implement a toString method</a>
+      </h2>
+    		
+    		<p>This class, which has instance fields, has no toString() method, which will make debugging with this
+    		class more difficult than it could be. Consider adding a toString() method. Using libraries like commons-lang3
+    		ToStringBuilder makes this process easy.
+    		</p>
+    		
+    	<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IMC_IMMATURE_CLASS_NO_PACKAGE">Class is defined in the default package</a>
+      </h2>
+    		
+    		<p>This class has been created in the default package. Classes should be defined in a
+    		proper package structure, typically defined by the reverse of the domain name of the
+    		owner of the code base. Putting code in the default (no) package limits its usefulness, including:
+    		<ol>
+    		<li>Not being able to import this class into classes with packages</li>
+    		<li>Leaving it open to name collisions with other packages.</li>
+    		</ol>
+    		</p>
+    		
+    	<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER">Class orders instance fields before static fields</a>
+      </h2>
+    		
+    		<p>This class defines fields in an order that is confusing, and not expected by
+    		other developers. The standard is for static fields to be listed first, followed by instance
+    		fields. When fields are listed out of order, developers may make assumptions about their
+    		behaviour that are incorrect and lead to bugs.</p>
+    		
+    	<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="LSC_LITERAL_STRING_COMPARISON">Method makes literal string comparisons passing the literal as an argument</a>
+      </h2>
+			
+			<p>This line is in the form of <br/>
+<pre><code>String str = ...
+str.equals("someOtherString");
+//or
+str.compareTo("someOtherString");</code></pre>
+		    </p>
+			<p>A <code>NullPointerException</code> may occur if the String variable <code>str</code> is <code>null</code>. If instead the code was restructured to<br/>
+<pre><code>String str = ...
+"someOtherString".equals(str);
+//or
+"someOtherString".compareTo(str);</code></pre><br/>
+			that is, call <code>equals()</code> or <code>compareTo()</code> on the string literal, passing the
+			variable as an argument, then this exception could never happen as both <code>equals()</code> and
+			<code>compareTo()</code> check for <code>null</code>.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">An overridable method is called from a constructor</a>
+      </h2>
+      <p>
+      Calling an overridable method during in a constructor may result in the use of uninitialized data. It may also
+      leak the this reference of the partially constructed object. Only static, final or private methods should be
+      invoked from a constructor.</p>
+      <p>
+      See SEI CERT rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/MET05-J.+Ensure+that+constructors+do+not+call+overridable+methods">MET05-J. Ensure that constructors do not call overridable methods</a>.
+      </p>
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NM_METHOD_NAMING_CONVENTION">Method names should start with a lower case letter</a>
+      </h2>
+
+  <p>
+Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal word capitalized.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+      </h2>
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="S508C_NO_SETLABELFOR">JLabel doesn't specify what it's labeling</a>
+      </h2>
+			
+			<p>This class uses JLabels that do not specify what fields are being labeled.
+			This hampers screen readers from giving appropriate feedback to users. Use
+			the JLabel.setLabelFor method to accomplish this.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="S508C_NON_TRANSLATABLE_STRING">Method passes constant string to title/label of component</a>
+      </h2>
+			
+			<p>This method creates a component and passes a string literal to the title or label
+			of the component. As this string will be shown to users, it should be internationalizable
+			through the use of a resource bundle.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="S508C_NO_SETSIZE">Window sets size manually, and doesn't use pack</a>
+      </h2>
+			
+			<p>This class creates a window, and sizes the window using setSize. It is better,
+			for handling font size changes, to use the pack method.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SEC_SIDE_EFFECT_CONSTRUCTOR">Method uses a Side Effect Constructor</a>
+      </h2>
+			
+			<p>This method creates an object but does not assign this object to any variable or field.
+			This implies that the class operates through side effects in the constructor, which is a
+			bad pattern to use, as it adds unnecessary coupling. Consider pulling the side effect out of
+			the constructor, into a separate method, or into the calling method.</p>
+			
+		<p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+      </h2>
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">Field not initialized in constructor but dereferenced without null check</a>
+      </h2>
+
+  <p> This field is never initialized within any constructor, and is therefore could be null after
+the object is constructed. Elsewhere, it is loaded and dereferenced without a null check.
+This could be either an error or a questionable design, since
+it means a null pointer exception will be generated if that field is dereferenced
+before being initialized.
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>
